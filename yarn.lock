@@ -1646,6 +1646,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.14.0":
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
+  integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.4.0", "@babel/template@^7.8.3", "@babel/template@^7.8.6":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.10.4.tgz#3251996c4200ebc71d1a8fc405fba940f36ba278"
@@ -1707,10 +1714,10 @@
     "@emotion/utils" "0.11.3"
     "@emotion/weak-memoize" "0.2.5"
 
-"@emotion/core@^10.0.20", "@emotion/core@^10.0.9":
-  version "10.0.28"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.28.tgz#bb65af7262a234593a9e952c041d0f1c9b9bef3d"
-  integrity sha512-pH8UueKYO5jgg0Iq+AmCLxBsvuGtvlmiDCOuv8fGNYn3cowFpLN98L8zO56U0H1PjDIyAlXymgL3Wu7u7v6hbA==
+"@emotion/core@^10.0.20", "@emotion/core@^10.0.9", "@emotion/core@^10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.1.1.tgz#c956c1365f2f2481960064bcb8c4732e5fb612c3"
+  integrity sha512-ZMLG6qpXR8x031NXD8HJqugy/AZSkAuMxxqB46pmAR7ze47MhNJ56cdoX243QPZdGctrdfo+s08yZTiwaUcRKA==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@emotion/cache" "^10.0.27"
@@ -1733,7 +1740,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@emotion/is-prop-valid@0.8.8":
+"@emotion/is-prop-valid@0.8.8", "@emotion/is-prop-valid@^0.8.6":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
   integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
@@ -1771,7 +1778,7 @@
     "@emotion/serialize" "^0.11.15"
     "@emotion/utils" "0.11.3"
 
-"@emotion/styled@^10.0.17":
+"@emotion/styled@^10.0.17", "@emotion/styled@^10.0.27":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/styled/-/styled-10.0.27.tgz#12cb67e91f7ad7431e1875b1d83a94b814133eaf"
   integrity sha512-iK/8Sh7+NLJzyp9a5+vIQIXTYxfT4yB/OJbjzQanB2RZpvmzBQOHZWhpAMZWYEKRNNbsD6WfBw5sVWkb6WzS/Q==
@@ -2163,6 +2170,14 @@
   dependencies:
     core-js "^3.0.1"
 
+"@storybook/client-logger@6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-6.3.4.tgz#c7ee70463c48bb3af704165d5456351ebb667fc2"
+  integrity sha512-Gu4M5bBHHQznsdoj8uzYymeojwWq+CRNsUUH41BQIND/RJYSX1IYGIj0yNBP449nv2pjHcTGlN8NJDd+PcELCQ==
+  dependencies:
+    core-js "^3.8.2"
+    global "^4.4.0"
+
 "@storybook/components@5.3.19":
   version "5.3.19"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.3.19.tgz#aac1f9eea1247cc85bd93b10fca803876fb84a6b"
@@ -2360,7 +2375,7 @@
     prop-types "^15.7.2"
     regenerator-runtime "^0.13.3"
 
-"@storybook/theming@5.3.19", "@storybook/theming@^5.3.19":
+"@storybook/theming@5.3.19":
   version "5.3.19"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.3.19.tgz#177d9819bd64f7a1a6ea2f1920ffa5baf9a5f467"
   integrity sha512-ecG+Rq3hc1GOzKHamYnD4wZ0PEP9nNg0mXbC3RhbxfHj+pMMCWWmx9B2Uu75SL1PTT8WcfkFO0hU/0IO84Pzlg==
@@ -2377,6 +2392,24 @@
     prop-types "^15.7.2"
     resolve-from "^5.0.0"
     ts-dedent "^1.1.0"
+
+"@storybook/theming@^6.3.4":
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.3.4.tgz#69d3f912c74a7b6ba78c1c95fac3315356468bdd"
+  integrity sha512-L0lJcwUi7mse+U7EBAv5NVt81mH1MtUzk9paik8hMAc68vDtR/X0Cq4+zPsgykCROOTtEGrQ/JUUrpcEqeprTQ==
+  dependencies:
+    "@emotion/core" "^10.1.1"
+    "@emotion/is-prop-valid" "^0.8.6"
+    "@emotion/styled" "^10.0.27"
+    "@storybook/client-logger" "6.3.4"
+    core-js "^3.8.2"
+    deep-object-diff "^1.1.0"
+    emotion-theming "^10.0.27"
+    global "^4.4.0"
+    memoizerific "^1.11.3"
+    polished "^4.0.5"
+    resolve-from "^5.0.0"
+    ts-dedent "^2.0.0"
 
 "@storybook/ui@5.3.19":
   version "5.3.19"
@@ -4722,10 +4755,10 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
-core-js@^3.0.1, core-js@^3.0.4:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
-  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
+core-js@^3.0.1, core-js@^3.0.4, core-js@^3.8.2:
+  version "3.15.2"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.15.2.tgz#740660d2ff55ef34ce664d7e2455119c5bdd3d61"
+  integrity sha512-tKs41J7NJVuaya8DxIOCnl8QuPHx5/ZVbFo1oKgVl1qHFBBrDctzQGtuLjPpRdNTWmKPH6oEvgN/MUID+l485Q==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -5340,7 +5373,7 @@ emojis-list@^3.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
 
-emotion-theming@^10.0.19:
+emotion-theming@^10.0.19, emotion-theming@^10.0.27:
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/emotion-theming/-/emotion-theming-10.0.27.tgz#1887baaec15199862c89b1b984b79806f2b9ab10"
   integrity sha512-MlF1yu/gYh8u+sLUqA0YuA9JX0P4Hb69WlKc/9OLo+WCXuX6sy/KoIa+qJimgmr2dWqnypYKYPX37esjDBbhdw==
@@ -9107,6 +9140,13 @@ polished@^3.3.1:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
+polished@^4.0.5:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-4.1.3.tgz#7a3abf2972364e7d97770b827eec9a9e64002cfc"
+  integrity sha512-ocPAcVBUOryJEKe0z2KLd1l9EBa1r5mSwlKpExmrLzsnIzJo4axsoU9O2BjOTkDGDT4mZ0WFE5XKTlR3nLnZOA==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+
 popper.js@^1.14.4, popper.js@^1.14.7:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
@@ -11422,6 +11462,11 @@ ts-dedent@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-1.1.1.tgz#68fad040d7dbd53a90f545b450702340e17d18f3"
   integrity sha512-UGTRZu1evMw4uTPyYF66/KFd22XiU+jMaIuHrkIHQ2GivAXVlLV0v/vHrpOuTRf9BmpNHi/SO7Vd0rLu0y57jg==
+
+ts-dedent@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.1.1.tgz#6dd56870bb5493895171334fa5d7e929107e5bbc"
+  integrity sha512-riHuwnzAUCfdIeTBNUq7+Yj+ANnrMXo/7+Z74dIdudS7ys2k8aSGMzpJRMFDF7CLwUTbtvi1ZZff/Wl+XxmqIA==
 
 ts-map@^1.0.3:
   version "1.0.3"
